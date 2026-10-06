@@ -14,7 +14,7 @@ $pageTitle = $pageTitle ?? 'ورود';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f4f1eb">
+    <meta name="theme-color" content="#f5f5f7">
     <title><?= e($pageTitle) ?> | <?= e($authSiteName) ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

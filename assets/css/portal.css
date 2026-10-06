@@ -35,3 +35,132 @@
 
 .install-step-note{margin-bottom:15px}.install-db-row{display:grid;grid-template-columns:.65fr 1fr;gap:10px}.install-card>p>a{color:var(--ink2);font-size:10px;text-decoration:underline;text-underline-offset:3px}.install-card code{direction:ltr;unicode-bidi:isolate;font-size:10px}
 @media(max-width:420px){.install-db-row{grid-template-columns:1fr}}
+
+/* Apple-inspired system surfaces, typography and controls. */
+:root{--ink:#1d1d1f;--ink2:#424245;--muted:#6e6e73;--paper:#fff;--paper2:#f5f5f7;--line:#d2d2d7;--accent:#0071e3;--green:#248a5a;--red:#d9363e;--shadow:0 18px 50px rgba(0,0,0,.08);--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Vazirmatn,Tahoma,sans-serif}
+body{color:var(--ink);font-family:var(--font);background:#fff;line-height:1.75}
+.auth-body{background:radial-gradient(ellipse at 50% 0%,#edf6ff 0,transparent 46%),#f5f5f7}
+.auth-wrap{width:min(500px,calc(100% - 32px));padding:36px 0 24px}
+.auth-brand{align-self:flex-start;color:var(--ink)}
+.auth-brand-mark{width:40px;height:40px;border:0;border-radius:13px;color:var(--accent);background:#e8f3ff}
+.auth-brand strong{font-size:14px;font-weight:600;letter-spacing:-.02em}
+.auth-brand small{color:#86868b;font-size:10px}
+.auth-card{padding:34px 36px 30px;border:1px solid rgba(210,210,215,.75);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:0 18px 48px rgba(0,0,0,.07);backdrop-filter:blur(20px)}
+.auth-emblem{width:46px;height:46px;border-radius:15px;color:var(--accent);background:#eaf4ff}
+.auth-kicker,.portal-kicker{color:var(--accent);font-weight:600}
+.auth-card h1{font-size:28px;font-weight:650;letter-spacing:-.045em}
+.auth-description{color:#6e6e73;font-size:12px;line-height:1.9}
+.auth-security-note{color:#86868b;font-size:10px}
+.auth-copyright{color:#86868b;font-size:10px}
+.portal-form label,.portal-form-grid label{color:#424245;font-weight:500}
+.portal-form input,.portal-form textarea,.portal-form select,.portal-input,.portal-form-grid input,.portal-form-grid textarea,.portal-form-grid select{border:1px solid #d2d2d7;border-radius:12px;color:#1d1d1f;background:#fff}
+.portal-form input:focus,.portal-form textarea:focus,.portal-form select:focus,.portal-input:focus,.portal-form-grid input:focus,.portal-form-grid textarea:focus,.portal-form-grid select:focus{border-color:#0071e3;box-shadow:0 0 0 4px rgba(0,113,227,.12)}
+.portal-button{min-height:42px;padding:9px 17px;border-radius:999px;font-weight:600}
+.portal-button-primary{color:#fff;background:#0071e3}
+.portal-button-primary:hover{background:#0077ed}
+.portal-button-secondary{border-color:#d2d2d7;color:#0071e3;background:#fff}
+.portal-button-secondary:hover{border-color:#a1a1a6;background:#f5f5f7}
+.portal-button-danger{background:#d9363e}
+.portal-alert{border:0;border-radius:12px;color:#1d1d1f;background:#eaf4ff}
+.portal-alert-error{color:#7f1d1d;background:#fff0f0}
+.portal-alert-info{color:#26466a;background:#eef6ff}
+
+.portal-header{background:rgba(255,255,255,.86);border-bottom:1px solid rgba(210,210,215,.78);backdrop-filter:saturate(180%) blur(20px)}
+.portal-header-inner{width:min(1260px,calc(100% - 42px));min-height:70px;gap:24px}
+.portal-brand-mark{width:36px;height:36px;border:0;border-radius:12px;color:var(--accent);background:#eaf4ff}
+.portal-brand strong{font-size:13px;font-weight:600;letter-spacing:-.02em}
+.portal-brand small{color:#86868b}
+.portal-nav{gap:8px}
+.portal-nav a{padding:8px 11px;border-radius:999px;color:#515154;font-size:10px;transition:color .18s ease,background .18s ease}
+.portal-nav a[aria-current=page],.portal-nav a:hover{color:#0066cc;background:#eaf4ff}
+.portal-nav a[aria-current=page]:after{display:none}
+.portal-avatar{color:#fff;background:var(--accent)}
+.portal-logout{padding:7px 13px;border:1px solid #d2d2d7;border-radius:999px;color:#515154;background:#fff;font-size:9px}
+.portal-logout:hover{border-color:#a1a1a6;color:#1d1d1f;background:#f5f5f7}
+.portal-main{padding:34px 0 54px;background:#fff}
+.portal-container{width:min(1200px,calc(100% - 44px))}
+.portal-footer{border-top-color:#e5e5ea;color:#86868b}
+.portal-footer a{color:var(--accent)}
+.portal-page-heading{margin-bottom:25px}
+.portal-page-heading h1{font-size:30px;font-weight:650;letter-spacing:-.045em}
+.portal-page-heading h2,.portal-page-heading p{color:#6e6e73}
+.portal-card,.portal-stat,.portal-form-card,.portal-note,.portal-empty,.portal-table-wrap,.workflow-list-panel,.workflow-detail-card,.workflow-empty-detail,.qr-admin-box,.attendance-method-panel,.chat-layout,.chat-sidebar,.admin-shortcut{border-radius:20px}
+.portal-card,.portal-stat,.portal-form-card,.workflow-list-panel,.workflow-detail-card,.qr-admin-box,.attendance-method-panel,.admin-shortcut{border:1px solid #e5e5ea;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.035)}
+.portal-stat{padding:20px 22px}
+.portal-stat span,.portal-muted{color:#6e6e73}
+.portal-stat strong{font-size:27px;font-weight:650;letter-spacing:-.04em}
+.portal-section-link{border-color:#e5e5ea;border-radius:14px;background:#fff;transition:background .18s ease,border-color .18s ease}
+.portal-section-link:hover{border-color:#b8d8fb;background:#f7fbff}
+.portal-form-card{padding:24px}
+.portal-table-wrap{border-color:#e5e5ea;background:#fff}
+.portal-table th,.portal-table td{border-bottom-color:#e5e5ea}
+.portal-table th{color:#6e6e73;background:#f5f5f7}
+.portal-table td{color:#424245}
+.status-pill,.workflow-status{border-radius:999px}
+.status-pill{background:#e9f7ef;color:#248a5a}
+.status-pill.pending{background:#fff5df;color:#946200}
+.status-pill.rejected{background:#fff0f0;color:#bd2c35}
+.status-pill.new{background:#eaf4ff;color:#0066cc}
+.portal-empty{border:1px dashed #d2d2d7;color:#6e6e73;background:#f8f8fa}
+.portal-note{border:0;border-right:3px solid var(--accent);color:#424245;background:#f5f5f7}
+.portal-danger-note{border-right-color:#d9363e;color:#7f1d1d;background:#fff0f0}
+
+.attendance-layout{gap:18px}
+.attendance-method{border-color:#e5e5ea;border-radius:14px;background:#fff;color:#515154}
+.attendance-method:has(input:checked){border-color:#8fc4ff;background:#eff7ff;color:#1d1d1f}
+.attendance-method input,.location-consent input,.portal-checkbox input{accent-color:var(--accent)}
+.attendance-method-panel{padding:20px}
+.qr-canvas-wrap{border-color:#e5e5ea;border-radius:16px}
+.qr-admin-box{background:#fff}
+.chat-layout{overflow:hidden;border:1px solid #e5e5ea;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.04)}
+.chat-sidebar{border:0;border-left:1px solid #e5e5ea;border-radius:0;background:#f5f5f7}
+.chat-sidebar h2,.chat-topbar h2{font-size:14px;font-weight:600}
+.chat-user{border-radius:12px;color:#424245}
+.chat-user:hover,.chat-user.is-active{border-color:#dbeeff;background:#fff}
+.chat-user-avatar{background:#0071e3}
+.chat-topbar{border-bottom-color:#e5e5ea}
+.chat-messages{background:#f5f5f7}
+.chat-message{border:1px solid #e5e5ea;border-radius:16px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.035)}
+.chat-message.own{border-color:#d4e8ff;background:#eaf4ff}
+.chat-file-card{border:1px solid #e5e5ea;border-radius:12px;background:#fff}
+.chat-file-icon{border:0;border-radius:9px;color:#0071e3;background:#eaf4ff}
+.chat-file-button,.chat-attach-label{border:1px solid #d2d2d7;border-radius:999px;color:#0066cc;background:#fff}
+.chat-compose{border-top-color:#e5e5ea;background:#fff}
+.chat-compose textarea{border-color:#d2d2d7;border-radius:14px;background:#fff}
+.chat-file-progress{border-radius:999px;background:#e5e5ea}
+.chat-file-progress span{border-radius:999px;background:#0071e3}
+.chat-privacy-note{border:0;border-right:3px solid #0071e3;border-radius:12px;color:#515154;background:#f5f5f7}
+
+.editor-type-tabs a{border-color:#e5e5ea;border-radius:999px;background:#fff}
+.editor-type-tabs a.is-active{border-color:#1d1d1f;background:#1d1d1f}
+.admin-shortcut{transition:transform .2s ease,box-shadow .2s ease}
+.admin-shortcut:hover{transform:translateY(-2px);border-color:#dbeeff;box-shadow:0 10px 26px rgba(0,0,0,.07)}
+.workflow-list-panel,.workflow-detail-card{padding:21px}
+.workflow-list-item,.workflow-event-content,.workflow-action-block,.workflow-submit-review,.workflow-review-form,.workflow-reject-form{border-color:#e5e5ea;border-radius:14px;background:#fff}
+.workflow-list-item:hover,.workflow-list-item.is-selected{border-color:#b8d8fb;background:#f7fbff}
+.workflow-status{color:#515154;background:#f5f5f7}
+.status-submitted,.status-awaiting_review{color:#946200;background:#fff5df}
+.status-in_progress{color:#0066cc;background:#eaf4ff}
+.status-returned{color:#a54a14;background:#fff2e9}
+.status-completed{color:#248a5a;background:#e9f7ef}
+.status-rejected{color:#bd2c35;background:#fff0f0}
+.workflow-detail-head{border-bottom-color:#e5e5ea}
+.workflow-description{border-right-color:#0071e3;border-radius:12px;color:#424245;background:#f5f5f7}
+.workflow-action-block{background:#f8f8fa}
+.workflow-event-content{background:#fff}
+.workflow-event-dot{background:#0071e3}
+.workflow-empty-detail{border-color:#d2d2d7;background:#f8f8fa}
+.workflow-empty-detail>span{border:0;border-radius:15px;color:#0071e3;background:#eaf4ff}
+.workflow-meta-grid small,.workflow-list-meta{color:#86868b}
+.workflow-meta-grid strong{font-weight:600}
+
+.install-step-note{border:0;border-radius:12px;background:#f5f5f7}
+.install-db-row{gap:12px}
+.install-card>p>a{color:#0071e3}
+.install-card code{border-radius:4px;color:#424245;background:#f5f5f7}
+
+@media(max-width:1000px){.portal-header-inner{gap:12px}.portal-nav{gap:3px}.portal-nav a{padding-inline:8px}}
+@media(max-width:760px){.portal-header-inner{width:calc(100% - 28px);gap:12px}.portal-nav{gap:6px}.portal-nav a{border-radius:10px}.portal-main{padding-top:25px}.portal-container{width:calc(100% - 28px)}.portal-card,.portal-form-card,.workflow-list-panel,.workflow-detail-card{padding:17px}.chat-sidebar{border-left:0;border-bottom:1px solid #e5e5ea}.auth-card{padding:28px 22px}.auth-brand{align-self:center}}
+@media(max-width:420px){.install-db-row{grid-template-columns:1fr}.portal-stat{padding:15px}.portal-page-heading h1{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.portal-button:hover,.admin-shortcut:hover{transform:none}}
+:focus-visible{outline:3px solid rgba(0,113,227,.55);outline-offset:3px}

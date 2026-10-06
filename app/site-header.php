@@ -9,7 +9,7 @@ $metaDescription = $metaDescription ?? 'شرکت مشاوران افق دانش 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?= e($metaDescription) ?>">
-    <meta name="theme-color" content="#f4f1eb">
+    <meta name="theme-color" content="#f5f5f7">
     <title><?= e($pageTitle) ?> | <?= e(site_setting('site_name')) ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
