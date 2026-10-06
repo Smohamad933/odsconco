@@ -212,7 +212,7 @@ if ($selectedItem) {
     $stmt->execute([':workflow' => $selectedId]);
     $events = $stmt->fetchAll();
 }
-$activeUsers = $manager ? db()->query('SELECT id,full_name,role FROM users WHERE is_active=1 ORDER BY full_name COLLATE NOCASE')->fetchAll() : [];
+$activeUsers = $manager ? db()->query('SELECT id,full_name,role FROM users WHERE is_active=1 ORDER BY full_name')->fetchAll() : [];
 $mineOpen = 0;
 $waitingReview = 0;
 $submittedCount = 0;

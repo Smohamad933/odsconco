@@ -14,7 +14,7 @@ function active_chat_peer(int $peerId, int $me): bool
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $action = (string) ($_GET['action'] ?? '');
     if ($action === 'users') {
-        $stmt = db()->prepare('SELECT id,full_name,role FROM users WHERE is_active=1 AND id<>:me ORDER BY full_name COLLATE NOCASE');
+        $stmt = db()->prepare('SELECT id,full_name,role FROM users WHERE is_active=1 AND id<>:me ORDER BY full_name');
         $stmt->execute([':me' => $me]);
         json_response(['ok' => true, 'users' => $stmt->fetchAll()]);
     }

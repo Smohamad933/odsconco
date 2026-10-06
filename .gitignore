@@ -1,3 +1,6 @@
+/storage/database.php
+/storage/database.php.*.tmp
+/storage/database.php.*.bak
 /storage/*.sqlite
 /storage/*.sqlite-*
 /storage/*.db

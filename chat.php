@@ -4,7 +4,7 @@ $user = require_login();
 $portalTitle = 'پیام‌رسان داخلی';
 $activePortal = 'chat';
 $portalRoot = '';
-$stmt = db()->prepare('SELECT id,full_name,role FROM users WHERE is_active=1 AND id<>:self ORDER BY full_name COLLATE NOCASE');
+$stmt = db()->prepare('SELECT id,full_name,role FROM users WHERE is_active=1 AND id<>:self ORDER BY full_name');
 $stmt->execute([':self' => $user['id']]);
 $colleagues = $stmt->fetchAll();
 $requestedPeer = (int) ($_GET['peer'] ?? 0);

@@ -22,7 +22,9 @@ if ($action === 'qr-create') {
         ':expires' => $expires->format('Y-m-d H:i:s'),
         ':created' => $created->format('Y-m-d H:i:s'),
     ]);
-    db()->exec("DELETE FROM attendance_challenges WHERE expires_at < datetime('now','-1 day')");
+    $cutoff = (new DateTimeImmutable('now'))->modify('-1 day')->format('Y-m-d H:i:s');
+    $cleanup = db()->prepare('DELETE FROM attendance_challenges WHERE expires_at < :cutoff');
+    $cleanup->execute([':cutoff' => $cutoff]);
     $url = app_base_url() . '/attendance.php?qr=' . rawurlencode($rawToken) . '&event=' . rawurlencode($qrEventType);
     json_response(['ok' => true, 'url' => $url, 'expires_at' => $expires->format('Y-m-d H:i:s'), 'seconds' => 90]);
 }

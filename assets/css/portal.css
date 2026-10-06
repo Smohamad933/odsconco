@@ -32,3 +32,6 @@
 @media(max-width:1000px){.workflow-layout{grid-template-columns:1fr}.workflow-sidebar{display:grid;grid-template-columns:minmax(270px,.82fr) minmax(0,1.18fr);align-items:start}.workflow-list{max-height:520px}}
 @media(max-width:760px){.workflow-sidebar{grid-template-columns:1fr}.workflow-list{max-height:380px}.workflow-detail-head{flex-direction:column}.workflow-meta-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow-assign-form{grid-template-columns:1fr}.workflow-note-field{grid-column:auto}.workflow-comment-form{align-items:stretch;flex-direction:column}.workflow-review-form .portal-form-actions{width:100%}.automation-stats{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.automation-field-row{grid-template-columns:1fr}.automation-stats{grid-template-columns:1fr}.workflow-detail-card{padding:15px}.workflow-review-form .portal-button{flex:1 1 100%}}
+
+.install-step-note{margin-bottom:15px}.install-db-row{display:grid;grid-template-columns:.65fr 1fr;gap:10px}.install-card>p>a{color:var(--ink2);font-size:10px;text-decoration:underline;text-underline-offset:3px}.install-card code{direction:ltr;unicode-bidi:isolate;font-size:10px}
+@media(max-width:420px){.install-db-row{grid-template-columns:1fr}}
